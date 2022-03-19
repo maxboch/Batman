@@ -1,0 +1,249 @@
+*, 
+*::before, *::after{
+    box-sizing: border-box;
+}
+*:focus:not(:focus-visible) {
+    outline: none;
+}
+@font-face {
+	font-family: 'Museo Sans Cyrl 700';
+	src: url('../fonts/MuseoSansCyrl-700.eot');
+	src: local('../fonts/MuseoSansCyrl-700'),
+		url('../fots/MuseoSansCyrl-700.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/MuseoSansCyrl-700.woff') format('woff'),
+		url('../fonts/MuseoSansCyrl-700.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+html, body{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+}
+
+
+
+.container{
+    max-width: 113.5rem;
+    margin: 0 auto;
+}
+.header{
+    width: 100%;
+    position: absolute;
+    padding-top: 6.4rem;
+    padding-bottom: 9.4rem;
+    
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.headerMenu{
+   display: flex; 
+   align-items: center;
+}
+
+.headerLogo{
+    width: 7.9rem;
+    height: 2.8rem;
+    margin-right: 3.9rem;
+}
+.headerNav a:not(:last-child){
+    margin-right: 2.4rem;
+}
+.headerNav a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 114%;
+}
+.headerSocialsIcon{
+    
+    width: 1.7rem;
+    height: 1.6rem;
+}
+.headerSocials a:not(:last-child){
+    margin-right: 2.1rem;
+}
+
+.main{
+    padding-top: 18.7rem;
+    background: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x:center;
+    background-position-y: top;
+    padding-bottom: 10.4rem;
+}
+
+.main-rating{
+    margin-bottom: 1rem;
+}
+.main-header{
+    margin: 0;
+}
+.main-rating-title{
+    font-size: 1.4rem;
+    line-height: 114%;
+    margin-bottom: 1.6rem;
+   
+}
+.main-header{
+    font-family: 'Museo Sans Cyrl 700';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 7.6rem;
+    line-height: 119%;
+    
+}
+.main-rating-wrap{
+    display: flex;
+    align-items: center;
+    
+}
+.main-rating-stars{
+    display: flex;
+    align-items: center;
+}
+.main-rating-number{
+    font-size: 1.2rem;
+    line-height: 117%;
+    margin-left: 0.9rem;
+}
+.main-rating-star{
+    width: 1.2rem;
+    height: 1.2rem;
+    flex-shrink: 0;
+    cursor: pointer;
+
+}
+.main-rating-star:not(:last-child){
+    margin-right: 0.4rem;
+
+}
+.main-description-wrap{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+}
+.main-description{
+    max-width: 52.8rem;
+    font-size: 1.4rem;
+    line-height: 150%;
+    margin-top: 0.8rem;
+    margin-bottom: 4rem;
+}
+
+.main-button-play{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 33.1rem;
+    width: 13.2rem;
+    height: 13.2rem;
+    border-radius: 50%;
+    background-color: black;
+    background:rgba(0, 0, 0, 0.5);
+    
+}
+.main-button-dark{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: black;
+}
+.main-arrow{
+    position: relative;
+    left: 3.8rem;
+    top: 3rem;
+ 
+}
+.main-button{
+    display: flex;
+    justify-content: center;
+    max-width: 24.5rem;
+    padding: 2.2rem 7.2rem;
+    background: black;
+    text-decoration: none;
+    color: #FFFFFF;
+    border-radius: 0.8rem;
+    font-size: 1.4rem;
+    line-height: 114%;
+    margin-bottom: 8.8rem;
+    
+}
+.main-slider-wrap{
+    width: 41.6rem;
+    display: flex;
+    align-items: center;
+    
+
+}
+.main-slider-slide{
+    position: relative;
+    width: 16.4rem;
+    height: 10.5rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.main-slider-slide span{
+    position: absolute;
+    left: 1.1rem;
+    bottom: .6rem;
+    font-weight: 120%;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color: #FFFFFF;
+}
+
+.main-slider-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main-slider-arrow{
+    width: 3.2rem;
+    height: 3.2rem;
+    flex-shrink: 0;
+    margin-left: 2.8rem;
+    cursor: pointer;
+}
+
+
+.footer{
+    
+    background: black;
+    color:  #686767;
+    padding: 2rem 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 142%;
+}
+.footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footerMenu{
+    display: flex;
+    
+
+}
+.footerMenu li{
+    list-style: none;
+    
+    
+}
+.footerMenu li a{
+    color:  #686767;
+    text-decoration: none;
+}
+.footerMenu li:not(:last-child){
+    margin-right: 2.5rem;
+}
